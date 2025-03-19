@@ -26,7 +26,7 @@ rm -f ${gtflist}            # remove if exists
 for sample in s1 s1t s2 s2t s3 s4 s5 s6 s7 s8 s9 s10 s11 s12
 
 do
-    sample="${sample}.c2.25K"
+    sample="${sample}.c2"
     fastq="${data}/${sample}.fq"	# path to raw fastq file 
     trim1="$data/${sample}.t1.fq"		# path to adapter-trimmed fastq file 
     trim2="$data/${sample}.t2.fq"		# path to quality-trimmed fastq file 
