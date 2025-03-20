@@ -5,9 +5,12 @@ install.packages("BiocManager")
 BiocManager::install("DESeq2")
 BiocManager::install("limma")
 
+install.packages("ggrepel")
+
 # Load required packages
 library(DESeq2)
 library(ggplot2)
+library(ggrepel)
 library("limma")
 
 # Load in and format data
@@ -50,18 +53,21 @@ plotDispEsts(dds_tran)
 
 # Perform rlog on both objects
 rld_genes = rlog(dds_genes, blind=TRUE)
-
-plotPCA(rld_genes,intgroup=c("group"))
-
 rld_tran = rlog(dds_tran, blind=TRUE)
 
+# Plot PCAs
+ggp = plotPCA(rld_genes,intgroup=c("group")) +
+  geom_text_repel(aes(label=sample_names),show.legend = FALSE)
+ggp
 plotPCA(rld_tran,intgroup=c("group"))
+
 # matrix of log2(raw-counts)
 #lgc.raw = log2(counts(dds_genes,normalized=FALSE)+1)
 
-# matrix of log2(normalized-counts)
-#lgc.norm = log2(counts(dds,normalized=TRUE)+1)
+# matrix of log2(normalized-counts) for genes
+lgc_norm_genes = log2(counts(dds_genes,normalized=TRUE)+1)
 
+meanSdPlot(assay(rld))
 
 
 
