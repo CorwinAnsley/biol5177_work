@@ -42,7 +42,26 @@ dds_tran = dds_tran[keep,]
 
 # Run the DE analysis 
 dds_genes = DESeq(dds_genes)
+dds_tran = DESeq(dds_tran)
 
+# Make dispersion plots
 plotDispEsts(dds_genes)
+plotDispEsts(dds_tran)
+
+# Perform rlog on both objects
+rld_genes = rlog(dds_genes, blind=TRUE)
+
+plotPCA(rld_genes,intgroup=c("group"))
+
+rld_tran = rlog(dds_tran, blind=TRUE)
+
+plotPCA(rld_tran,intgroup=c("group"))
+# matrix of log2(raw-counts)
+#lgc.raw = log2(counts(dds_genes,normalized=FALSE)+1)
+
+# matrix of log2(normalized-counts)
+#lgc.norm = log2(counts(dds,normalized=TRUE)+1)
+
+
 
 
