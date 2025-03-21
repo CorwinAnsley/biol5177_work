@@ -3,15 +3,19 @@
 # Install dependencies (uncomment if not installed)
 install.packages("BiocManager") 
 BiocManager::install("DESeq2")
+BiocManager::install("vsn")
 BiocManager::install("limma")
 
 install.packages("ggrepel")
+install.packages("ashr")
 
 # Load required packages
 library(DESeq2)
 library(ggplot2)
 library(ggrepel)
 library("limma")
+library(vsn)
+library(ashr)
 
 # Load in and format data
 gene_count_table = read.csv("./data/gene_count_matrix.csv",row.names=1)
@@ -59,7 +63,12 @@ rld_tran = rlog(dds_tran, blind=TRUE)
 ggp = plotPCA(rld_genes,intgroup=c("group")) +
   geom_text_repel(aes(label=sample_names),show.legend = FALSE)
 ggp
-plotPCA(rld_tran,intgroup=c("group"))
+
+ggp = plotPCA(rld_tran,intgroup=c("group")) +
+  geom_text_repel(aes(label=sample_names),show.legend = FALSE)
+ggp
+
+# Following steps only for genes
 
 # matrix of log2(raw-counts)
 #lgc.raw = log2(counts(dds_genes,normalized=FALSE)+1)
@@ -67,7 +76,19 @@ plotPCA(rld_tran,intgroup=c("group"))
 # matrix of log2(normalized-counts) for genes
 lgc_norm_genes = log2(counts(dds_genes,normalized=TRUE)+1)
 
-meanSdPlot(assay(rld))
+meanSdPlot(assay(rld_genes))
 
+meanSdPlot(lgc_norm_genes)
 
+# Get results for LFC = 0
+resultsNames(dds_genes)
 
+res_lfc0 = results(dds_genes,contrast=c("group_B_vs_A"))
+plotMA(res_lfc0,ylim=c(0,2e+05),main='Gene level B vs A LFC 0')
+#plotMA(res_lfc0 ,alpha=0.5,ylim=c(-6,6),main='Gene level B vs A LFC 0')
+
+res_lfcshrink = lfcShrink(dds_genes,contrast=list(c("group_B_vs_A")),type="ashr")
+plotMA(res_lfcshrink ,alpha=0.05,ylim=c(-6,6),main='Gene level B vs A LFC 0')
+
+res_lfc1 = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=1)
+plotMA(res_lfc1 ,alpha=0.001,main='Gene level B vs A')
