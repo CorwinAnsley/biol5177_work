@@ -81,18 +81,24 @@ meanSdPlot(assay(rld_genes))
 meanSdPlot(lgc_norm_genes)
 
 # Get unshrunken results for LFC = 0
-res_lfc0_BvsA = results(dds_genes,contrast=c("group","B","A"))
-res_lfc0_CvsA = results(dds_genes,contrast=c("group","C","A"))
+res_lfc0_BvsA = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=0)
+res_lfc0_CvsA = results(dds_genes,contrast=c("group","C","A"),lfcThreshold=0)
 
 # LFC = 1 
 res_lfc1_BvsA = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=1)
 res_lfc1_CvsA = results(dds_genes,contrast=c("group","C","A"),lfcThreshold=1)
 
-DESeq2::plotMA(res_lfc0,alpha=0.001,main='Gene level B vs A LFC 0')
+DESeq2::plotMA(res_lfc0_BvsA,alpha=0.001,ylim=c(-6,6),main='Gene level B vs A LFC=0')
+DESeq2::plotMA(res_lfc0_CvsA,alpha=0.001,ylim=c(-6,6),main='Gene level C vs A LFC=0')
 #plotMA(res_lfc0 ,alpha=0.5,ylim=c(-6,6),main='Gene level B vs A LFC 0')
 
-res_lfcshrink = lfcShrink(dds_genes,contrast=list(c("group_B_vs_A")),type="ashr")
-DESeq2::plotMA(res_lfcshrink ,alpha=0.001,ylim=c(-6,6),main='Gene level B vs A LFC 0')
+res_lfc0_shrink_BvsA = lfcShrink(dds_genes,contrast=list(c("group_B_vs_A")),type="ashr",lfcThreshold=0)
+res_lfc0_shrink_CvsA = lfcShrink(dds_genes,contrast=list(c("group_C_vs_A")),type="ashr",lfcThreshold=0)
+
+res_lfc1_shrink_BvsA = lfcShrink(dds_genes,contrast=list(c("group_B_vs_A")),type="ashr",lfcThreshold=1)
+res_lfc1_shrink_CvsA = lfcShrink(dds_genes,contrast=list(c("group_C_vs_A")),type="ashr",lfcThreshold=1)
+
+DESeq2::plotMA(res_lfcshrink ,alpha=0.001,ylim=c(-6,6),main='Gene level B vs A LFC=0')
 
 res_lfc1 = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=1)
 DESeq2::plotMA(res_lfc1 ,alpha=0.001,main='Gene level B vs A')
