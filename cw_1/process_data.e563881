@@ -1,0 +1,292 @@
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1549, uncontaminated: 5005476, total: 5007025
+contamination rate: 0.000309
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 1076, 288, 15, 87, 20, 13, 12, 19, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 5004007
+FastQ records discarded: 3018
+
+5004007 reads; of these:
+  5004007 (100.00%) were unpaired; of these:
+    82 (0.00%) aligned 0 times
+    4469587 (89.32%) aligned exactly 1 time
+    534338 (10.68%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 7, uncontaminated: 24993, total: 25000
+contamination rate: 0.000280
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 24988
+FastQ records discarded: 12
+
+24988 reads; of these:
+  24988 (100.00%) were unpaired; of these:
+    0 (0.00%) aligned 0 times
+    22478 (89.96%) aligned exactly 1 time
+    2510 (10.04%) aligned >1 times
+100.00% overall alignment rate
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1612, uncontaminated: 4787005, total: 4788617
+contamination rate: 0.000337
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 1123, 300, 40, 66, 31, 13, 6, 16, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4784319
+FastQ records discarded: 4298
+
+4784319 reads; of these:
+  4784319 (100.00%) were unpaired; of these:
+    114 (0.00%) aligned 0 times
+    4211875 (88.03%) aligned exactly 1 time
+    572330 (11.96%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 10, uncontaminated: 24990, total: 25000
+contamination rate: 0.000400
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 5, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 24974
+FastQ records discarded: 26
+
+24974 reads; of these:
+  24974 (100.00%) were unpaired; of these:
+    1 (0.00%) aligned 0 times
+    21924 (87.79%) aligned exactly 1 time
+    3049 (12.21%) aligned >1 times
+100.00% overall alignment rate
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1448, uncontaminated: 4270489, total: 4271937
+contamination rate: 0.000339
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 1006, 263, 33, 69, 22, 9, 17, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7, 2, 8, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4269761
+FastQ records discarded: 2176
+
+4269761 reads; of these:
+  4269761 (100.00%) were unpaired; of these:
+    78 (0.00%) aligned 0 times
+    3816457 (89.38%) aligned exactly 1 time
+    453226 (10.61%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1327, uncontaminated: 4825269, total: 4826596
+contamination rate: 0.000275
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 906, 280, 27, 48, 15, 4, 8, 14, 9, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4824649
+FastQ records discarded: 1947
+
+4824649 reads; of these:
+  4824649 (100.00%) were unpaired; of these:
+    115 (0.00%) aligned 0 times
+    4261367 (88.32%) aligned exactly 1 time
+    563167 (11.67%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1353, uncontaminated: 4508122, total: 4509475
+contamination rate: 0.000300
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 842, 284, 39, 96, 24, 3, 20, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 10, 6, 2, 2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4506330
+FastQ records discarded: 3145
+
+4506330 reads; of these:
+  4506330 (100.00%) were unpaired; of these:
+    94 (0.00%) aligned 0 times
+    3939885 (87.43%) aligned exactly 1 time
+    566351 (12.57%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1040, uncontaminated: 4778803, total: 4779843
+contamination rate: 0.000218
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 661, 220, 28, 64, 23, 12, 10, 14, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4776909
+FastQ records discarded: 2934
+
+4776909 reads; of these:
+  4776909 (100.00%) were unpaired; of these:
+    95 (0.00%) aligned 0 times
+    4173678 (87.37%) aligned exactly 1 time
+    603136 (12.63%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1051, uncontaminated: 3740833, total: 3741884
+contamination rate: 0.000281
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 690, 220, 38, 49, 14, 5, 12, 12, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 3740439
+FastQ records discarded: 1445
+
+3740439 reads; of these:
+  3740439 (100.00%) were unpaired; of these:
+    97 (0.00%) aligned 0 times
+    3175153 (84.89%) aligned exactly 1 time
+    565189 (15.11%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 2165, uncontaminated: 7707503, total: 7709668
+contamination rate: 0.000281
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 1427, 465, 53, 114, 21, 13, 33, 12, 10, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 9, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 7707041
+FastQ records discarded: 2627
+
+7707041 reads; of these:
+  7707041 (100.00%) were unpaired; of these:
+    196 (0.00%) aligned 0 times
+    6547697 (84.96%) aligned exactly 1 time
+    1159148 (15.04%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 3 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1407, uncontaminated: 5626462, total: 5627869
+contamination rate: 0.000250
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 952, 286, 15, 87, 15, 11, 22, 1, 2, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 5625742
+FastQ records discarded: 2127
+
+5625742 reads; of these:
+  5625742 (100.00%) were unpaired; of these:
+    104 (0.00%) aligned 0 times
+    5004727 (88.96%) aligned exactly 1 time
+    620911 (11.04%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1632, uncontaminated: 5953416, total: 5955048
+contamination rate: 0.000274
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 1077, 329, 30, 115, 18, 10, 19, 9, 4, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 1, 0, 6, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 5951742
+FastQ records discarded: 3306
+
+5951742 reads; of these:
+  5951742 (100.00%) were unpaired; of these:
+    113 (0.00%) aligned 0 times
+    5198699 (87.35%) aligned exactly 1 time
+    752930 (12.65%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1164, uncontaminated: 5019472, total: 5020636
+contamination rate: 0.000232
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 787, 217, 17, 90, 16, 10, 8, 8, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 5018811
+FastQ records discarded: 1825
+
+5018811 reads; of these:
+  5018811 (100.00%) were unpaired; of these:
+    91 (0.00%) aligned 0 times
+    4477752 (89.22%) aligned exactly 1 time
+    540968 (10.78%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 2 files and 1 in-memory blocks...
+prior: 0.050
+
+Adapter Trimming Complete
+contaminated: 1179, uncontaminated: 4235397, total: 4236576
+contamination rate: 0.000278
+Adapter 1 'universal adapter (rc)' contamination occurences:
+[0, 0, 0, 0, 0, 822, 223, 14, 68, 8, 4, 13, 9, 4, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Adapter 2 'index adapter' contamination occurences:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+FastQ records kept: 4235405
+FastQ records discarded: 1171
+
+4235405 reads; of these:
+  4235405 (100.00%) were unpaired; of these:
+    115 (0.00%) aligned 0 times
+    3695463 (87.25%) aligned exactly 1 time
+    539827 (12.75%) aligned >1 times
+100.00% overall alignment rate
+[bam_sort_core] merging from 1 files and 1 in-memory blocks...
