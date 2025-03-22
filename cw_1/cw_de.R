@@ -52,8 +52,11 @@ dds_genes = DESeq(dds_genes)
 dds_tran = DESeq(dds_tran)
 
 # Make dispersion plots
-plotDispEsts(dds_genes)
-plotDispEsts(dds_tran)
+plotDispEsts(dds_genes,main='Genes')
+dev.print(pdf, './plots/disp_genes.pdf')
+
+plotDispEsts(dds_tran,main='Transcripts')
+dev.print(pdf, './plots/disp_tran.pdf')
 
 # Perform rlog on both objects
 rld_genes = rlog(dds_genes, blind=TRUE)
@@ -61,12 +64,16 @@ rld_tran = rlog(dds_tran, blind=TRUE)
 
 # Plot PCAs
 ggp = plotPCA(rld_genes,intgroup=c("group")) +
-  geom_text_repel(aes(label=sample_names),show.legend = FALSE)
-ggp
+  geom_text_repel(aes(label=sample_names),show.legend = FALSE) +
+  ggtitle("Genes") + 
+  theme(aspect.ratio = 1)
+ggsave("./plots/pca_genes.pdf", width = 9, height = 9)
 
 ggp = plotPCA(rld_tran,intgroup=c("group")) +
-  geom_text_repel(aes(label=sample_names),show.legend = FALSE)
-ggp
+  geom_text_repel(aes(label=sample_names),show.legend = FALSE) +
+  ggtitle("Transcripts") + 
+  theme(aspect.ratio = 1)
+ggsave("./plots/pca_tran.pdf", width = 9, height = 9)
 
 # Following steps only for genes
 
@@ -76,9 +83,13 @@ ggp
 # matrix of log2(normalized-counts) for genes
 lgc_norm_genes = log2(counts(dds_genes,normalized=TRUE)+1)
 
-meanSdPlot(assay(rld_genes))
+ggp = meanSdPlot(assay(rld_genes)) +
+  theme(aspect.ratio = 1)
+ggsave("./plots/meanSd_rlog.pdf", width = 9, height = 9)
 
-meanSdPlot(lgc_norm_genes)
+ggp = meanSdPlot(lgc_norm_genes) +
+  theme(aspect.ratio = 1)
+ggsave("./plots/meanSd_log2_norm.pdf", width = 9, height = 9)
 
 # Get unshrunken results for LFC = 0
 res_lfc0_BvsA = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=0)
@@ -88,8 +99,17 @@ res_lfc0_CvsA = results(dds_genes,contrast=c("group","C","A"),lfcThreshold=0)
 res_lfc1_BvsA = results(dds_genes,contrast=c("group","B","A"),lfcThreshold=1)
 res_lfc1_CvsA = results(dds_genes,contrast=c("group","C","A"),lfcThreshold=1)
 
-DESeq2::plotMA(res_lfc0_BvsA,alpha=0.001,ylim=c(-6,6),main='Gene level B vs A LFC=0')
-DESeq2::plotMA(res_lfc0_CvsA,alpha=0.001,ylim=c(-6,6),main='Gene level C vs A LFC=0')
+results = list(res_lfc0_BvsA,res_lfc0_CvsA,res_lfc1_BvsA,res_lfc1_CvsA)
+ma_filenames = list('lfc0_BvsA','lfc0_CvsA','lfc1_BvsA','lfc1_CvsA')
+
+for (i in 1:length(results)){
+  ggp = DESeq2::plotMA(results[[i]],alpha=0.001,ylim=c(-6,6))
+  filepath = paste("./plots/",ma_filenames[i], sep = "")
+  filepath = paste(filepath,".pdf", sep = "")
+  ggsave(filepath, width = 9, height = 9)
+}
+
+
 #plotMA(res_lfc0 ,alpha=0.5,ylim=c(-6,6),main='Gene level B vs A LFC 0')
 
 res_lfc0_shrink_BvsA = lfcShrink(dds_genes,contrast=list(c("group_B_vs_A")),type="ashr",lfcThreshold=0)
