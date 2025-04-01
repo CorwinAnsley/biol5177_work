@@ -3,3 +3,4 @@
 *.o*
 */hisat_results/*
 */stringtie_results/*
+*/plots/*
